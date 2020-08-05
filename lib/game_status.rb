@@ -32,6 +32,10 @@ def won?(board)
   board_win
 end
 
-def full(board)
-  board.all?{|cell| cell = "X" || "O"}
+def full?(board)
+  board.none?{|cell| cell == " " || cell == ""}
+end
+
+def draw?(board)
+  
 end
