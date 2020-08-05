@@ -5,7 +5,7 @@ require_relative 'lib/game_status.rb'
 #board = ["X", "X", "X", "", "", "", "", "", ""]
 #board = ["X", "O", "X", "", "", "", "", "", ""]
 #board = ["O", "O", " ", "X", "X", "X", " ", " ", " "] #[3,4,5]
-board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
+#board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
 #win_combo = WIN_COMBINATIONS[0]
 
-puts won?(board)
+puts winner(board)
