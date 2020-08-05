@@ -23,9 +23,15 @@ def won?(board)
     win_index_3 = win_combo[2]
 
     # compare win_combo to corresponding board positions
-    if (board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X") or (board[win_index_1] == "Y" && board[win_index_2] == "Y" && board[win_index_3] == "Y")
+    if (board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X") || (board[win_index_1] == "O" && board[win_index_2] == "O" && board[win_index_3] == "O")
       # if they match, that's a win
       board_win = win_combo
     end
     # if not, keep enumerating
+  end
+  board_win
+end
+
+def full(board)
+  
 end
